@@ -6,13 +6,20 @@
 		<title>WebMirror</title>
 
 		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/vendor/weather-icons/css/weather-icons.min.css">
 		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body ng-app="nl.timvdalen.webmirror">
 		<section class="main container" ng-controller="mainController">
+			<mirror-event-list events="events"></mirror-event-list>
 		</section>
 
 		<script src="/bower_components/angular/angular.min.js"></script>
+
+		<script src="/app/event/event.js"></script>
+		<script src="/app/event/eventlist.directive.js"></script>
+		<script src="/app/event/event.directive.js"></script>
 
 		<script src="/app/app.js"></script>
 		<script src="/app/mainController.js"></script>
