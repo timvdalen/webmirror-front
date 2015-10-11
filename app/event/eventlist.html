@@ -1,3 +1,3 @@
 <ul class="list-unstyled text-right">
-	<mirror-event ng-repeat="event in events" info="event"></mirror-event>
+	<mirror-event ng-repeat="event in events track by $index" info="event"></mirror-event>
 </ul>

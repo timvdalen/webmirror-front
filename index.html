@@ -12,16 +12,18 @@
 	</head>
 	<body ng-app="nl.timvdalen.webmirror">
 		<section class="main container" ng-controller="mainController">
-			<mirror-event-list events="events"></mirror-event-list>
+			<mirror-event-list events="data.events"></mirror-event-list>
 		</section>
 
 		<script src="/bower_components/angular/angular.min.js"></script>
+		<script src="/bower_components/angular-websocket/dist/angular-websocket.min.js"></script>
 
 		<script src="/app/event/event.js"></script>
 		<script src="/app/event/eventlist.directive.js"></script>
 		<script src="/app/event/event.directive.js"></script>
 
 		<script src="/app/app.js"></script>
+		<script src="/app/data.js"></script>
 		<script src="/app/mainController.js"></script>
 	</body>
 </html>
