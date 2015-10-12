@@ -7,10 +7,15 @@ body {
 
 mirror-clock .clock {
 	font-size: 3em;
+	font-weight: 300;
 }
 
 mirror-weather .celsiuswrapper {
 	margin-top: -4px;
+}
+
+mirror-weather, mirror-event {
+	font-weight: 100;
 }
 
 i.wi.wi-celsius {
