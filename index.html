@@ -5,6 +5,7 @@
 
 		<title>WebMirror</title>
 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/vendor/weather-icons/css/weather-icons.min.css">
@@ -12,11 +13,15 @@
 	</head>
 	<body ng-app="nl.timvdalen.webmirror">
 		<section class="main container" ng-controller="mainController">
+			<mirror-clock></mirror-clock>
 			<mirror-event-list events="data.events"></mirror-event-list>
 		</section>
 
 		<script src="/bower_components/angular/angular.min.js"></script>
 		<script src="/bower_components/angular-websocket/dist/angular-websocket.min.js"></script>
+
+		<script src="/app/clock/clock.js"></script>
+		<script src="/app/clock/clock.directive.js"></script>
 
 		<script src="/app/event/event.js"></script>
 		<script src="/app/event/eventlist.directive.js"></script>
