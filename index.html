@@ -14,6 +14,7 @@
 	<body ng-app="nl.timvdalen.webmirror">
 		<section class="main container" ng-controller="mainController">
 			<mirror-clock></mirror-clock>
+			<mirror-weather info="data.weather"></mirror-weather>
 			<mirror-event-list events="data.events"></mirror-event-list>
 		</section>
 
@@ -26,6 +27,9 @@
 		<script src="/app/event/event.js"></script>
 		<script src="/app/event/eventlist.directive.js"></script>
 		<script src="/app/event/event.directive.js"></script>
+
+		<script src="/app/weather/weather.js"></script>
+		<script src="/app/weather/weather.directive.js"></script>
 
 		<script src="/app/app.js"></script>
 		<script src="/app/data.js"></script>

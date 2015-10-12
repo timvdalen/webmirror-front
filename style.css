@@ -5,3 +5,15 @@
 mirror-clock .clock {
 	font-size: 3em;
 }
+
+mirror-weather .celsiuswrapper {
+	margin-top: -4px;
+}
+
+i.wi.wi-celsius {
+	font-size: 2em;
+}
+
+i.fa {
+	font-size: 1.3em;
+}
