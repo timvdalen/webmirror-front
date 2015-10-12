@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular.module('nl.timvdalen.webmirror')
-		.service('Data', function ($websocket) {
+		.service('Data', function ($websocket, SERVER) {
 			var socket,
 				ret = {
 					events: [],
@@ -13,8 +13,7 @@
 					}
 				};
 
-			//TODO: Make configurable
-			socket = $websocket('ws://localhost:4000');
+			socket = $websocket('ws://' + SERVER.host + ':' + SERVER.port);
 
 			socket.onMessage(function (message) {
 				var data = JSON.parse(message.data);
