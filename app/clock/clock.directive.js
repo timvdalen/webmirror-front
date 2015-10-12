@@ -10,7 +10,7 @@
 					var update, iv;
 
 					update = function () {
-						$scope.time = dateFilter(new Date(), 'hh:mm');
+						$scope.time = dateFilter(new Date(), 'HH:mm');
 					};
 
 					update();
