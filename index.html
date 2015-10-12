@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="/vendor/weather-icons/css/weather-icons.min.css">
 		<link rel="stylesheet" href="/style.css">
 	</head>
-	<body ng-app="nl.timvdalen.webmirror">
+	<body ng-app="nl.timvdalen.webmirror" onclick="document.getElementsByTagName('body')[0].webkitRequestFullscreen()">
 		<section class="main container" ng-controller="mainController">
 			<mirror-clock></mirror-clock>
 			<mirror-weather info="data.weather"></mirror-weather>
